@@ -9,16 +9,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var redraw = false
-    var body: some View {
-    LinkPreviewView(url: "https://medium.com/flawless-app-stories/context-menu-alert-and-actionsheet-in-swiftui-b6ff0d1f8493", redraw: $redraw)
-    }
+  var body: some View {
+    let url = "https://medium.com/flawless-app-stories/context-menu-alert-and-actionsheet-in-swiftui-b6ff0d1f8493"
+    return LPView(url: url)
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-            .frame(height: 100)
-            .previewLayout(.sizeThatFits)
-    }
+  static var previews: some View {
+    ContentView()
+      .frame(height: 100)
+      .previewLayout(.sizeThatFits)
+  }
 }
