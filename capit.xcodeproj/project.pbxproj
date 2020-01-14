@@ -14,6 +14,7 @@
 		59E5939B23CCC205006BB177 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E5939A23CCC205006BB177 /* Preview Assets.xcassets */; };
 		59E5939E23CCC205006BB177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E5939C23CCC205006BB177 /* LaunchScreen.storyboard */; };
 		59E593A723CCC28A006BB177 /* LinkPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E593A623CCC28A006BB177 /* LinkPreviewView.swift */; };
+		A56DBB0E23CDE152008023F7 /* MetadataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56DBB0D23CDE152008023F7 /* MetadataStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		59E5939F23CCC205006BB177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59E593A623CCC28A006BB177 /* LinkPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkPreviewView.swift; sourceTree = "<group>"; };
 		59E593A823CCCA14006BB177 /* capit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = capit.entitlements; sourceTree = "<group>"; };
+		A56DBB0D23CDE152008023F7 /* MetadataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		59E5939023CCC1FF006BB177 /* capit */ = {
 			isa = PBXGroup;
 			children = (
+				A56DBB0C23CDE139008023F7 /* Util */,
 				59E593A823CCCA14006BB177 /* capit.entitlements */,
 				59E593A523CCC23F006BB177 /* View */,
 				59E5939123CCC1FF006BB177 /* AppDelegate.swift */,
@@ -86,6 +89,14 @@
 				59E593A623CCC28A006BB177 /* LinkPreviewView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A56DBB0C23CDE139008023F7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A56DBB0D23CDE152008023F7 /* MetadataStorage.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 			files = (
 				59E5939223CCC1FF006BB177 /* AppDelegate.swift in Sources */,
 				59E5939423CCC1FF006BB177 /* SceneDelegate.swift in Sources */,
+				A56DBB0E23CDE152008023F7 /* MetadataStorage.swift in Sources */,
 				59E5939623CCC1FF006BB177 /* ContentView.swift in Sources */,
 				59E593A723CCC28A006BB177 /* LinkPreviewView.swift in Sources */,
 			);
