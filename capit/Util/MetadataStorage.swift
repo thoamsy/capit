@@ -23,12 +23,12 @@ struct MetadataStorage {
             print("Fuck something: \(error)")
         }
     }
-    
+
     static func metadata(for url: URL) -> LPLinkMetadata? {
         guard let metadatas = UserDefaults.standard.dictionary(forKey: "metadata") as? [String: Data] else {
             return nil
         }
-        
+
         guard let data = metadatas[url.absoluteString] else { return nil }
         do {
             return try NSKeyedUnarchiver.unarchivedObject(ofClass: LPLinkMetadata.self, from: data)

@@ -16,6 +16,7 @@
 		59E5939B23CCC205006BB177 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E5939A23CCC205006BB177 /* Preview Assets.xcassets */; };
 		59E5939E23CCC205006BB177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E5939C23CCC205006BB177 /* LaunchScreen.storyboard */; };
 		59E593A723CCC28A006BB177 /* LinkPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E593A623CCC28A006BB177 /* LinkPresentationView.swift */; };
+		A529647223D97148007C10D4 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A529647123D97148007C10D4 /* .swiftlint.yml */; };
 		A56DBB0E23CDE152008023F7 /* MetadataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56DBB0D23CDE152008023F7 /* MetadataStorage.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		59E5939F23CCC205006BB177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59E593A623CCC28A006BB177 /* LinkPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkPresentationView.swift; sourceTree = "<group>"; };
 		59E593A823CCCA14006BB177 /* capit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = capit.entitlements; sourceTree = "<group>"; };
+		A529647123D97148007C10D4 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		A56DBB0D23CDE152008023F7 /* MetadataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				59E5939C23CCC205006BB177 /* LaunchScreen.storyboard */,
 				59E5939F23CCC205006BB177 /* Info.plist */,
 				59E5939923CCC205006BB177 /* Preview Content */,
+				A529647123D97148007C10D4 /* .swiftlint.yml */,
 			);
 			path = capit;
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 				59E5938A23CCC1FF006BB177 /* Sources */,
 				59E5938B23CCC1FF006BB177 /* Frameworks */,
 				59E5938C23CCC1FF006BB177 /* Resources */,
+				A529647023D97050007C10D4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -171,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A529647223D97148007C10D4 /* .swiftlint.yml in Resources */,
 				59E5939E23CCC205006BB177 /* LaunchScreen.storyboard in Resources */,
 				59E5939B23CCC205006BB177 /* Preview Assets.xcassets in Resources */,
 				59E5939823CCC205006BB177 /* Assets.xcassets in Resources */,
@@ -178,6 +183,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A529647023D97050007C10D4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		59E5938A23CCC1FF006BB177 /* Sources */ = {
